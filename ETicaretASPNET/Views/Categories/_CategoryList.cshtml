@@ -1,0 +1,10 @@
+﻿@using ETicaretASPNET.Models
+@model IEnumerable<CategoryModel>
+
+<li><a href="/Home/Product">Tümü</a></li>
+@foreach(var item in Model)
+{
+
+    <li><a href="/Home/ProductList/@item.ID">@item.Name [@item.Count]</a></li>
+
+}
